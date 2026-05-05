@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultoría en Protección Patrimonial y Financiera</title>
+    <meta
+      name="description"
+      content="Protege tu patrimonio y optimiza tus finanzas con una propuesta clara y personalizada. Agenda una cotización previa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="container nav">
+        <div class="brand">Tu Consultor Patrimonial</div>
+        <a href="#formulario" class="btn btn-outline">Quiero mi cotización</a>
+      </nav>
+      <section class="container hero-content">
+        <p class="pill">Consultoría en Protección Patrimonial & Financiera</p>
+        <h1>
+          Diseña una estrategia para proteger lo que construiste y crecer con
+          tranquilidad.
+        </h1>
+        <p class="lead">
+          Te ayudo a ordenar tus objetivos, detectar riesgos y armar una
+          propuesta previa ajustada a tu perfil familiar o empresarial.
+        </p>
+        <div class="actions">
+          <a href="#formulario" class="btn">Solicitar propuesta previa</a>
+          <a href="#servicios" class="btn btn-secondary">Ver cómo trabajo</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="servicios" class="container section grid-3">
+        <article class="card">
+          <h3>Diagnóstico patrimonial</h3>
+          <p>
+            Revisamos situación actual, compromisos financieros y nivel de
+            exposición para entender prioridades reales.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Plan financiero estratégico</h3>
+          <p>
+            Definimos objetivos de corto, mediano y largo plazo con alternativas
+            concretas para proteger e impulsar tu patrimonio.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Acompañamiento personalizado</h3>
+          <p>
+            Recibes una propuesta previa clara para tomar decisiones informadas
+            y avanzar con una cotización formal.
+          </p>
+        </article>
+      </section>
+
+      <section class="section dark">
+        <div class="container">
+          <h2>¿Para quién es esta asesoría?</h2>
+          <ul class="list">
+            <li>Personas y familias que quieren proteger su patrimonio.</li>
+            <li>Profesionales independientes con ingresos variables.</li>
+            <li>Dueños de negocio que necesitan estructura financiera.</li>
+            <li>
+              Quienes desean comparar opciones antes de contratar una solución.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="formulario" class="container section form-wrap">
+        <div>
+          <h2>Déjame tus datos y te contacto con una propuesta previa</h2>
+          <p>
+            Completa este formulario. En menos de 24 horas hábiles recibirás
+            contacto para una primera evaluación.
+          </p>
+          <p class="note">
+            Tip para campañas en Meta: usa este mismo enlace como destino del
+            anuncio y mide conversiones con Meta Pixel.
+          </p>
+        </div>
+
+        <form id="leadForm" class="form" novalidate>
+          <label>
+            Nombre completo
+            <input name="nombre" type="text" required />
+          </label>
+          <label>
+            WhatsApp
+            <input name="telefono" type="tel" required />
+          </label>
+          <label>
+            Correo electrónico
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            ¿Qué quieres cotizar?
+            <select name="tipo" required>
+              <option value="">Seleccionar</option>
+              <option>Protección patrimonial familiar</option>
+              <option>Plan financiero personal</option>
+              <option>Estrategia para negocio</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>
+            Ingreso mensual aproximado (opcional)
+            <input name="ingreso" type="text" />
+          </label>
+          <label>
+            Comentarios
+            <textarea name="mensaje" rows="4"></textarea>
+          </label>
+          <button class="btn" type="submit">Enviar datos</button>
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Consultoría Patrimonial y Financiera.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
