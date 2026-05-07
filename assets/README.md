@@ -1,9 +1,7 @@
 # Foto del consultor
 
-Coloca aquí tu foto profesional con el nombre:
+La landing ahora usa directamente esta imagen remota:
 
-`foto-consultor.jpg`
+`https://i.imgur.com/N5HHKYD.jpg`
 
-Ruta esperada por la landing:
-
-`assets/foto-consultor.jpg`
+Si prefieres alojarla localmente, sube `foto-consultor.jpg` en `assets/` y cambia el `src` en `index.html`.
