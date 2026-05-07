@@ -22,7 +22,30 @@ body {
 }
 .nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
 .brand { font-weight: 800; }
-.hero-content { padding: 40px 0; max-width: 760px; }
+.hero-content { padding: 40px 0; max-width: 1100px; }
+
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; }
+.profile-card {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 14px;
+  backdrop-filter: blur(6px);
+}
+.profile-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.profile-card figcaption {
+  margin-top: 10px;
+  color: #dbeafe;
+  font-size: 0.95rem;
+}
+
 .pill { display:inline-block; padding:8px 12px; border:1px solid #6ea1ff; border-radius:999px; font-size:14px; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 16px 0; }
 .lead { font-size: 1.1rem; color: #dbeafe; }
@@ -50,5 +73,5 @@ h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 16px 0; }
 .footer { background: #0f172a; color: #94a3b8; padding: 20px 0; }
 
 @media (max-width: 900px) {
-  .grid-3, .form-wrap { grid-template-columns: 1fr; }
+  .grid-3, .form-wrap, .hero-grid { grid-template-columns: 1fr; }
 }
